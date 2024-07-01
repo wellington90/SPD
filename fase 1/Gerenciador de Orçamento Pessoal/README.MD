@@ -1,15 +1,15 @@
  # Para criar um Gerenciador de Orçamento Pessoal, vamos desenvolver um programa que inclua:
 
- ## 1° Registro e cálculo de despesas mensais fixas.
- ## 2° Previsão de gastos futuros com base em médias de gastos passados.
- ## 3° Análise de economia com sugestões de dicas de economia.
- ## 4° Vamos organizar o código em módulos para facilitar a manutenção e a compreensão.
+ - 1° Registro e cálculo de despesas mensais fixas.
+ - 2° Previsão de gastos futuros com base em médias de gastos passados.
+ - 3° Análise de economia com sugestões de dicas de economia.
+ - 4° Vamos organizar o código em módulos para facilitar a manutenção e a compreensão.
 
 # Estrutura do Projeto
- 1° main.py - Script principal para rodar o gerenciador de orçamento.
- 2° despesas.py - Módulo para registrar e calcular despesas mensais fixas.
- 3° previsao.py - Módulo para prever gastos futuros com base em médias de gastos passados.
- 4° analise.py - Módulo para analisar a economia e sugerir dicas.
+ - 1° main.py - Script principal para rodar o gerenciador de orçamento.
+ - 2° despesas.py - Módulo para registrar e calcular despesas mensais fixas.
+ - 3° previsao.py - Módulo para prever gastos futuros com base em médias de gastos passados.
+ - 4° analise.py - Módulo para analisar a economia e sugerir dicas.
 
 # Explicação do Código
 
