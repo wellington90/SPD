@@ -1,6 +1,6 @@
-Explicação do Código
+# Explicação do Código
 
-gerador_aleatorio.py
+## gerador_aleatorio.py
 Este módulo contém funções para gerar tempos aleatórios utilizando a distribuição exponencial, comum em modelos de filas para simular tempos entre chegadas e tempos de atendimento.
 
 gerar_tempo_entre_chegadas(taxa: float) -> float:
@@ -11,11 +11,10 @@ gerar_tempo_atendimento(taxa: float) -> float:
 Gera o tempo de atendimento baseado na taxa fornecida.
 Também utiliza random.expovariate.
 A taxa representa a frequência de atendimento, por exemplo, 1/8 significa um atendimento a cada 8 minutos em média.
-simulacao_fila.py
+
+## simulacao_fila.py
 Este módulo define as classes e métodos para simular a fila de atendimento.
-
 Classe Cliente:
-
 Representa um cliente na fila de atendimento.
 Atributos:
 tempo_chegada: Tempo de chegada do cliente.
@@ -24,7 +23,6 @@ tempo_fim_atendimento: Tempo em que o atendimento do cliente termina.
 Método definir_tempo_atendimento(self, tempo_inicio, duracao_atendimento):
 Define os tempos de início e fim do atendimento do cliente.
 Classe SimulacaoFila:
-
 Simula uma fila de atendimento, como em um banco ou supermercado.
 Atributos:
 taxa_chegada: Taxa média de chegada de clientes.
@@ -49,9 +47,9 @@ Define os tempos de início e fim do atendimento e agenda o próximo fim de aten
 Método evento_saida(self):
 Processa um evento de término de atendimento de cliente.
 Libera o servidor e agenda o próximo atendimento se houver clientes na fila.
-estatisticas.py
-Este módulo contém a função para calcular as estatísticas da simulação.
 
+## estatisticas.py
+Este módulo contém a função para calcular as estatísticas da simulação.
 Função calcular_estatisticas(clientes):
 Calcula o tempo médio de espera, tempo médio no sistema e a taxa de ocupação do servidor a partir da lista de clientes.
 Filtra os clientes atendidos (aqueles cujo tempo_inicio_atendimento não é None).
@@ -59,7 +57,8 @@ Calcula o tempo de espera (diferença entre tempo_inicio_atendimento e tempo_che
 Soma esses tempos para todos os clientes atendidos.
 Calcula as médias dos tempos de espera e no sistema.
 Calcula a taxa de ocupação do servidor como a proporção do tempo total de serviço sobre o tempo total da simulação.
-main.py
+
+## main.py
 Este é o script principal que configura e executa a simulação e imprime as estatísticas resultantes.
 
 Função main():
@@ -68,6 +67,4 @@ Define a taxa de chegada (taxa_chegada) e a taxa de atendimento (taxa_atendiment
 Cria e executa a simulação usando a classe SimulacaoFila.
 Calcula as estatísticas da simulação usando a função calcular_estatisticas.
 Imprime os resultados das estatísticas: tempo médio de espera, tempo médio no sistema e taxa de ocupação do servidor.
-Bloco if __name__ == "__main__"::
-
 Garante que a função main() seja executada apenas quando o script é executado diretamente, e não quando é importado como um módulo em outro script.
