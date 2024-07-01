@@ -10,26 +10,26 @@
 - tarefas.py - Módulo para organizar tarefas entre os participantes.
 - lembretes.py - Módulo para enviar notificações automáticas.
 
-## Explicação do Código
-# datas.py
+# Explicação do Código
+## datas.py
 Classe PlanejadorDatas:
 Armazena as disponibilidades dos participantes.
 Método adicionar_disponibilidade(participante, data_disponivel): Adiciona uma data disponível para um participante.
 Método calcular_data_ideal(): Calcula a data ideal para o evento com base na disponibilidade informada pelos participantes, escolhendo a data com o maior número de participantes disponíveis.
 
-tarefas.py
+## tarefas.py
 Classe OrganizadorTarefas:
 Organiza as tarefas entre os participantes.
 Método adicionar_tarefa(tarefa, responsavel): Adiciona uma tarefa a um participante.
 Método listar_tarefas(): Lista todas as tarefas e seus responsáveis.
 
-lembretes.py
+## lembretes.py
 Classe GerenciadorLembretes:
 Gerencia os lembretes para o evento.
 Método adicionar_lembrete(mensagem, dias_antes): Adiciona um lembrete para ser enviado um certo número de dias antes do evento.
 Método verificar_lembretes(data_atual): Verifica se há lembretes para enviar na data atual.
 
-main.py
+## main.py
 Função main():
 Planeja as datas do evento adicionando as disponibilidades dos participantes e calcula a data ideal.
 Organiza as tarefas distribuindo-as entre os participantes.
